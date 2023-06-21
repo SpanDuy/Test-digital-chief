@@ -1,0 +1,20 @@
+POST /api/library/post HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Content-Length: 257
+
+{
+    "name": "Downtown Library",
+    "address": "456 Elm Street",
+    "phone": "555-5678",
+    "workingHours": "Mon-Fri 10am-6pm",
+    "bookCount": 1,
+    "books": [
+        {
+            "id": 31
+        },
+        {
+            "id": 32
+        }
+    ]
+}

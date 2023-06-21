@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "8199a70c-5d8f-4415-8735-3e4af9ff9811",
+		"name": "Library RestApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25925626"
+	},
+	"item": [
+		{
+			"name": "Book queries",
+			"item": [
+				{
+					"name": "get all book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/book/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/book/get/30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								"get",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Where the Wild Things Are\",\n    \"year\": 1963,\n    \"genre\": \"Children's Picture Book\",\n    \"pageCount\": 48,\n    \"isbn\": \"978-3-16-148410-9\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/book/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/book/delete/28",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								"delete",
+								"28"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"2000\",\n    \"year\": 2000,\n    \"genre\": \"2000\",\n    \"pageCount\": 2000,\n    \"isbn\": \"978-3-16-148410-2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/book/put/30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								"put",
+								"30"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Library queries",
+			"item": [
+				{
+					"name": "get all library",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/library/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"library",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get library",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/library/get/39",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"library",
+								"get",
+								"39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create library",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Downtown Library\",\n    \"address\": \"456 Elm Street\",\n    \"phone\": \"555-5678\",\n    \"workingHours\": \"Mon-Fri 10am-6pm\",\n    \"bookCount\": 1,\n    \"books\": [\n        {\n            \"id\": 31\n        },\n        {\n            \"id\": 32\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/library/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"library",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete library",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/library/delete/39",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"library",
+								"delete",
+								"39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update library",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Central Library\",\n    \"address\": \"123 Main Street\",\n    \"phone\": \"555-1234\",\n    \"workingHours\": \"Mon-Fri 9am-5pm\",\n    \"bookCount\": 1,\n    \"books\": [\n        {\n            \"id\": 28\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/library/put/39",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"library",
+								"put",
+								"39"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

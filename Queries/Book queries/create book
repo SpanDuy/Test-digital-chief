@@ -1,0 +1,12 @@
+POST /api/book/post HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Content-Length: 156
+
+{
+    "title": "Where the Wild Things Are",
+    "year": 1963,
+    "genre": "Children's Picture Book",
+    "pageCount": 48,
+    "isbn": "978-3-16-148410-9"
+}

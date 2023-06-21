@@ -1,0 +1,12 @@
+PUT /api/book/put/30 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Content-Length: 118
+
+{
+    "title": "2000",
+    "year": 2000,
+    "genre": "2000",
+    "pageCount": 2000,
+    "isbn": "978-3-16-148410-2"
+}

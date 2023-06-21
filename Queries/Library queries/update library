@@ -1,0 +1,17 @@
+PUT /api/library/put/39 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Content-Length: 214
+
+{
+    "name": "Central Library",
+    "address": "123 Main Street",
+    "phone": "555-1234",
+    "workingHours": "Mon-Fri 9am-5pm",
+    "bookCount": 1,
+    "books": [
+        {
+            "id": 28
+        }
+    ]
+}
